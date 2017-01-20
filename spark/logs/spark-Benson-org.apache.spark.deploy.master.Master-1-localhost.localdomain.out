@@ -1,0 +1,24 @@
+Spark Command: /usr/lib/jvm/jre/bin/java -cp /home/Benson/Documents/spark_installation/spark/conf/:/home/Benson/Documents/spark_installation/spark/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host localhost --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/01/20 11:05:30 INFO Master: Started daemon with process name: 11801@localhost.localdomain
+17/01/20 11:05:30 INFO SignalUtils: Registered signal handler for TERM
+17/01/20 11:05:30 INFO SignalUtils: Registered signal handler for HUP
+17/01/20 11:05:30 INFO SignalUtils: Registered signal handler for INT
+17/01/20 11:05:30 WARN Utils: Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 139.52.66.148 instead (on interface eno1)
+17/01/20 11:05:30 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/01/20 11:05:30 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/01/20 11:05:30 INFO SecurityManager: Changing view acls to: Benson
+17/01/20 11:05:30 INFO SecurityManager: Changing modify acls to: Benson
+17/01/20 11:05:30 INFO SecurityManager: Changing view acls groups to: 
+17/01/20 11:05:30 INFO SecurityManager: Changing modify acls groups to: 
+17/01/20 11:05:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(Benson); groups with view permissions: Set(); users  with modify permissions: Set(Benson); groups with modify permissions: Set()
+17/01/20 11:05:31 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+17/01/20 11:05:31 INFO Master: Starting Spark master at spark://localhost:7077
+17/01/20 11:05:31 INFO Master: Running Spark version 2.1.0
+17/01/20 11:05:31 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+17/01/20 11:05:31 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://139.52.66.148:8080
+17/01/20 11:05:31 INFO Utils: Successfully started service on port 6066.
+17/01/20 11:05:31 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+17/01/20 11:05:31 INFO Master: I have been elected leader! New state: ALIVE
+17/01/20 11:05:37 INFO Master: Registering worker 139.52.66.148:34505 with 4 cores, 6.7 GB RAM

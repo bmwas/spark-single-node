@@ -1,0 +1,52 @@
+#--------------------------------------------------------------------------------------------------
+#Apache Spark Single Node Installation Instructions.
+#Scripts are tabbed and instructions are non-tabbed.
+#Note: These instructions are for apache spark 2.1.0 (Pre-built for Hadoop).
+#Note: Both spark and scala used in this installation are include in this repository.
+#---------------------------------------------------------------------------------------------------
+
+
+Download spark from apache.org.
+	wget http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz
+	tar -zxvf spark-2.1.0-bin-hadoop2.7.tgz
+	mv spark-2.1.0-bin-hadoop2.7 spark
+
+Place spark folder onto the ~/.bashrc file
+Note assumes JAVA has been installed and it's functional
+	export SPARK_HOME=/home/Documents/spark
+	export PATH=$PATH:$SPARK_HOME/bin 
+
+Download and install scala and declare folder onto the ~/.bashrc file
+	wget http://downloads.lightbend.com/scala/2.12.1/scala-2.12.1.tgz
+	tar -zxvf scala-2.12.1.tgz
+	mv scala-2.12.1 scala
+
+Place scala folder onto the ~/.bashrc file
+	export SCALA_HOME=/home/Documents/scala
+	export PATH=$PATH:$SCALA_HOME/bin 
+
+Install pyspark ( a spark python API) by adding the following onto the ~/.bashrc file
+	PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
+
+
+Install py4j package
+	pip install py4j
+
+Finaly - remember to run spark!
+	cd /spark_installation/spark/sbin
+	sh start-all.sh
+
+Check whether spark is running properly using spark's Web UI
+	http://localhost:4040/jobs/
+
+##-----INSTALLATION OF SPARK AND PYSPARK IS COMPLETE AND READY TO USE!---------------------
+	
+
+References:
+
+https://github.com/KristianHolsheimer/pyspark-setup-guide
+
+https://github.com/mahmoudparsian/pyspark-tutorial
+
+
+
