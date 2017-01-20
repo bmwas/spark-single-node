@@ -30,10 +30,6 @@ Edit the ~/.bashrc file
 	export SCALA_HOME=/home/Documents/spark_installation/scala
 	export PATH=$PATH:$SCALA_HOME/bin 
 
-Place scala folder onto the ~/.bashrc file
-	export SCALA_HOME=/home/Documents/scala
-	export PATH=$PATH:$SCALA_HOME/bin 
-
 Install pyspark ( a spark python API) by adding the following onto the ~/.bashrc file
 	PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/build:$PYTHONPATH
 
