@@ -6,7 +6,7 @@
 #---------------------------------------------------------------------------------------------------
 
 
-Download spark from apache.org.
+Download spark from apache.org (This version of spark + scala is included in this repo).
 	wget http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz
 	tar -zxvf spark-2.1.0-bin-hadoop2.7.tgz
 	mv spark-2.1.0-bin-hadoop2.7 spark
